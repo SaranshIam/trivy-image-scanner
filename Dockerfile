@@ -6,6 +6,7 @@ WORKDIR /go/src/app
 COPY . .
 RUN go get -d -v
 EXPOSE 8888
+EXPOSE 8080
 RUN go build -o main .
 CMD ["./main"]
 
